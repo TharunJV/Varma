@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+{% block title %}Emergency Contacts{% endblock %}
+{% block content %}
+
+<div class="container my-5">
+    <h2 class="text-center mb-4">Emergency Contacts</h2>
+    <div class="row g-4">
+        <div class="col-md-3 col-6">
+            <div class="contact-card p-4 shadow-sm rounded text-center bg-white">
+                <h1>🚓</h1>
+                <h5>Police</h5>
+                <p class="fw-bold fs-4 text-danger">100</p>
+            </div>
+        </div>
+        <div class="col-md-3 col-6">
+            <div class="contact-card p-4 shadow-sm rounded text-center bg-white">
+                <h1>📞</h1>
+                <h5>Women Helpline</h5>
+                <p class="fw-bold fs-4 text-danger">1091</p>
+            </div>
+        </div>
+        <div class="col-md-3 col-6">
+            <div class="contact-card p-4 shadow-sm rounded text-center bg-white">
+                <h1>🚑</h1>
+                <h5>Ambulance</h5>
+                <p class="fw-bold fs-4 text-danger">108</p>
+            </div>
+        </div>
+        <div class="col-md-3 col-6">
+            <div class="contact-card p-4 shadow-sm rounded text-center bg-white">
+                <h1>🧒</h1>
+                <h5>Child Helpline</h5>
+                <p class="fw-bold fs-4 text-danger">1098</p>
+            </div>
+        </div>
+    </div>
+    <p class="text-center mt-4 fst-italic">*Numbers listed are common Indian emergency helpline numbers. Please verify local emergency numbers for your region.</p>
+</div>
+
+{% endblock %}

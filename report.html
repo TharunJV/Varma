@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+{% block title %}Report Incident{% endblock %}
+{% block content %}
+
+<div class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-7">
+            <div class="card shadow p-4 form-card">
+                <h2 class="text-center mb-4">Report an Incident</h2>
+                <form method="POST" action="{{ url_for('report') }}">
+                    <div class="mb-3">
+                        <label class="form-label">Full Name</label>
+                        <input type="text" name="name" class="form-control" placeholder="Enter your name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Location</label>
+                        <input type="text" name="location" class="form-control" placeholder="Enter incident location" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Incident Type</label>
+                        <select name="incident_type" class="form-select" required>
+                            <option value="" selected disabled>Select incident type</option>
+                            <option value="Harassment">Harassment</option>
+                            <option value="Theft">Theft</option>
+                            <option value="Stalking">Stalking</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Date</label>
+                        <input type="date" name="date" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Description</label>
+                        <textarea name="description" class="form-control" rows="4" placeholder="Describe the incident" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-danger w-100">Submit Report</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
