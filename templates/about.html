@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+{% block title %}About{% endblock %}
+{% block content %}
+
+<div class="container my-5">
+    <h2 class="text-center mb-4">About This Project</h2>
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <p>
+                <strong>Women Safety Analytics – Protecting Women from Safety Threats</strong> is a college mini
+                project developed using Flask, SQLite, HTML, CSS, JavaScript, and Bootstrap 5. The goal of this
+                project is to create a simple and effective platform where incidents affecting women's safety can
+                be reported, tracked, and analyzed.
+            </p>
+            <p>
+                The platform allows users to submit incident reports including the type of incident, location,
+                date, and description. All reports are stored in a lightweight SQLite database. An analytics
+                dashboard provides administrators or researchers with a quick overview of the number and types
+                of incidents reported, using Chart.js visualizations such as pie charts and bar charts.
+            </p>
+            <p>
+                In addition, the platform includes an Emergency Contacts page listing important helpline numbers
+                such as Police, Women Helpline, Ambulance, and Child Helpline, along with general safety tips to
+                help raise awareness among users.
+            </p>
+            <h4 class="mt-4">Technologies Used</h4>
+            <ul>
+                <li>HTML5, CSS3, JavaScript</li>
+                <li>Bootstrap 5 (CDN)</li>
+                <li>Python Flask (Backend Framework)</li>
+                <li>SQLite (Database)</li>
+                <li>Chart.js (Data Visualization)</li>
+            </ul>
+            <h4 class="mt-4">Purpose</h4>
+            <p>
+                This project was built as an academic mini project to demonstrate full-stack web development
+                skills while addressing a socially relevant issue — women's safety. It is intended for
+                educational purposes and awareness building.
+            </p>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

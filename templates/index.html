@@ -1,0 +1,98 @@
+{% extends "layout.html" %}
+{% block title %}Home{% endblock %}
+{% block content %}
+
+<section class="hero-section text-center text-white d-flex align-items-center">
+    <div class="container">
+        <h1 class="display-4 fw-bold animate-fade-in">Women Safety Analytics</h1>
+        <p class="lead animate-fade-in-delay">Protecting Women from Safety Threats through Awareness and Reporting</p>
+        <a href="{{ url_for('report') }}" class="btn btn-danger btn-lg mt-3 animate-fade-in-delay">Report an Incident</a>
+    </div>
+</section>
+
+<section class="container my-5">
+    <h2 class="text-center mb-4">About the Project</h2>
+    <p class="text-center col-lg-8 mx-auto">
+        Women Safety Analytics is a mini project designed to help communities report, track, and analyze
+        incidents related to women's safety. The platform allows users to report incidents such as
+        harassment, theft, and stalking, and provides an analytical dashboard to visualize the collected data,
+        helping raise awareness and inform safety initiatives.
+    </p>
+</section>
+
+<section class="bg-light py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Women Safety Statistics</h2>
+        <div class="row text-center g-4">
+            <div class="col-md-3 col-6">
+                <div class="stat-card p-4 shadow-sm rounded bg-white">
+                    <h3 class="text-danger">1 in 3</h3>
+                    <p>Women experience physical or sexual violence in their lifetime</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="stat-card p-4 shadow-sm rounded bg-white">
+                    <h3 class="text-danger">80%</h3>
+                    <p>Incidents go unreported due to fear or stigma</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="stat-card p-4 shadow-sm rounded bg-white">
+                    <h3 class="text-danger">60%</h3>
+                    <p>Feel unsafe traveling alone at night</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="stat-card p-4 shadow-sm rounded bg-white">
+                    <h3 class="text-danger">24/7</h3>
+                    <p>Helplines available for immediate assistance</p>
+                </div>
+            </div>
+        </div>
+        <p class="text-center mt-3 fst-italic">*Statistics are illustrative and used for awareness purposes only.</p>
+    </div>
+</section>
+
+<section class="container my-5">
+    <h2 class="text-center mb-4">Safety Tips</h2>
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="tip-card p-4 shadow-sm rounded h-100">
+                <h5>🚶‍♀️ Stay Alert</h5>
+                <p>Always be aware of your surroundings, especially in unfamiliar areas or at night.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="tip-card p-4 shadow-sm rounded h-100">
+                <h5>📱 Share Your Location</h5>
+                <p>Share live location with trusted family or friends when traveling alone.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="tip-card p-4 shadow-sm rounded h-100">
+                <h5>🚨 Know Emergency Numbers</h5>
+                <p>Keep important helpline numbers saved and easily accessible on your phone.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="tip-card p-4 shadow-sm rounded h-100">
+                <h5>👥 Trust Your Instincts</h5>
+                <p>If a situation feels unsafe, leave immediately and seek help from others nearby.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="tip-card p-4 shadow-sm rounded h-100">
+                <h5>🔦 Well-Lit Routes</h5>
+                <p>Prefer well-lit and populated routes over isolated shortcuts.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="tip-card p-4 shadow-sm rounded h-100">
+                <h5>📝 Report Incidents</h5>
+                <p>Reporting incidents helps authorities and communities respond and take action.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

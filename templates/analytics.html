@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+{% block title %}Analytics{% endblock %}
+{% block content %}
+
+<div class="container my-5">
+    <h2 class="text-center mb-4">Incident Analytics</h2>
+
+    <div class="row g-5 align-items-center">
+        <div class="col-md-6">
+            <div class="card shadow p-4">
+                <h5 class="text-center mb-3">Incident Types (Pie Chart)</h5>
+                <canvas id="pieChart"></canvas>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card shadow p-4">
+                <h5 class="text-center mb-3">Reports by Type (Bar Chart)</h5>
+                <canvas id="barChart"></canvas>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<script>
+    const chartLabels = ["Harassment", "Theft", "Stalking", "Other"];
+    const chartData = [
+        {{ harassment_count }},
+        {{ theft_count }},
+        {{ stalking_count }},
+        {{ other_count }}
+    ];
+</script>
+<script src="{{ url_for('static', filename='js/charts.js') }}"></script>
+
+{% endblock %}

@@ -1,0 +1,58 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.hero-section {
+    background: linear-gradient(135deg, #8e0e3a, #d63384);
+    min-height: 70vh;
+    color: white;
+}
+
+.stat-card, .tip-card, .contact-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-card:hover, .tip-card:hover, .contact-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.form-card {
+    border-top: 5px solid #d63384;
+}
+
+footer {
+    letter-spacing: 0.5px;
+}
+
+.animate-fade-in {
+    animation: fadeIn 1s ease-in;
+}
+
+.animate-fade-in-delay {
+    animation: fadeIn 1.8s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.navbar-brand {
+    letter-spacing: 0.5px;
+}
+
+.table-responsive {
+    animation: fadeIn 0.8s ease-in;
+}
+
+.card {
+    border-radius: 12px;
+}
